@@ -11,10 +11,20 @@ export class AppComponent {
   amount: number;
   height: number;
 
+  car = {
+    make: 'Toyota',
+    model: 'Camry',
+    year: 2000,
+  };
+
+  // // Console logging properties on component load
+  // constructor() {
+  //   console.log(this.car);
+  // }
+
   onHeightChange(value: string) {
     this.height = Number(value);
   }
-
   onNameChange(value: string) {
     this.name = value;
   }
