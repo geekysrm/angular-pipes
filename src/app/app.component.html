@@ -70,6 +70,23 @@
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="form-group col">
+      <label>Miles</label>
+      <input
+        class="form-control"
+        (input)="onMilesChange($event.target.value)"
+      />
+    </div>
+    <div class="col">
+      <label>
+        <b>Kilometers</b>
+      </label>
+      <div>
+        {{ miles | convert }}
+      </div>
+    </div>
+  </div>
 </div>
 
 {{ car | json }}

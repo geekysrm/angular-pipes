@@ -10,6 +10,7 @@ export class AppComponent {
   date: string;
   amount: number;
   height: number;
+  miles: number;
 
   car = {
     make: 'Toyota',
@@ -21,6 +22,10 @@ export class AppComponent {
   // constructor() {
   //   console.log(this.car);
   // }
+
+  onMilesChange(value: string) {
+    this.miles = Number(value);
+  }
 
   onHeightChange(value: string) {
     this.height = Number(value);
